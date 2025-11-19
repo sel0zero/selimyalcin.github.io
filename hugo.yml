@@ -107,7 +107,6 @@ params:
     minMatchCharLength: 1
     limit: 10
 
-
   ShowReadingTime: true
   ShowShareButtons: false
   ShowBreadCrumbs: true

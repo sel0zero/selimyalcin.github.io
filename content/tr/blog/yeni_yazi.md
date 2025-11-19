@@ -3,6 +3,7 @@ title: "Selim Yalçın — OSINT 101"
 date: 2025-11-19
 draft: false
 tags: ["osint", "kali", "cybersecurity"]
+comments: true
 
 ---
 
