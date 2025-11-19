@@ -98,7 +98,6 @@ params:
   searchHidden: false
   ShowSearchBar: true
   disableThemeToggle: false
-  
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -116,7 +115,6 @@ params:
   ShowWordCount: false
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
-  
   hideSummary: false
   disableScrollToTop: true
 
@@ -153,7 +151,6 @@ pygmentsUseClasses: true
 markup:
   highlight:
     noClasses: false
-    
 menu:
   main:
     - identifier: search
