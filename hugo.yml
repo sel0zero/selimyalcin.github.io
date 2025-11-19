@@ -91,6 +91,7 @@ Burada notlarımı, teknik adımları, küçük projeleri ve zaman içinde karş
 #        PaperMod Settings
 # -----------------------------
 params:
+  comments: true
   env: production
   author: "Selim"
   DateFormat: "2 January 2006"
