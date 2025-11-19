@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<main class="main">
+  <article class="post-single">
+
+    {{ partial "header.html" . }}
+    {{ partial "toc.html" . }}
+
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+
+    {{ partial "post_meta.html" . }}
+    {{ partial "post_nav_links.html" . }}
+    {{ partial "footer.html" . }}
+
+    <hr style="margin-top: 2rem;">
+
+    <!-- COMMENTS -->
+    {{ partial "comments/giscus.html" . }}
+
+  </article>
+</main>
+
+{{ end }}
+
