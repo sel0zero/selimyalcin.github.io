@@ -1,0 +1,161 @@
+baseURL: "https://selimyalcin.com/"
+title: "sel0zero"
+theme: PaperMod
+
+# Yeni Hugo sürümü için pagination
+pagination:
+  pagerSize: 5
+
+defaultContentLanguage: tr
+defaultContentLanguageInSubdir: true
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: false
+  minifyOutput: true
+
+# -----------------------------
+#     LANGUAGES (TR + EN)
+# -----------------------------
+languages:
+  tr:
+    outputs:
+      home:
+        - HTML
+        - RSS
+        - JSON
+    languageName: "TR"
+    weight: 1
+    contentDir: "content/tr"
+    params:
+      homeInfoParams:
+        Title: "Selim Yalçın"
+        Content: "Merhaba, ben Selim.
+Bilgi güvenliği teknolojileri öğrencisiyim ve özellikle web güvenliği, OSINT ve sızma testi alanlarında kendimi geliştirmeye çalışıyorum. Öğrendiğim konuları hem pekiştirmek hem de benzer ilgi alanlarına sahip kişilerle paylaşmak için bu blogu oluşturdum.
+
+Burada notlarımı, teknik adımları, küçük projeleri ve zaman içinde karşılaştığım problemleri çözme süreçlerimi paylaşıyorum."
+      socialIcons:
+        - name: github
+          url: "https://github.com/sel0zero"
+        - name: x
+          url: "https://x.com/sel0zero"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/selimyalcn/"
+    menu:
+      main:
+        - name: "Blog"
+          url: "/tr/blog/"
+          weight: 1
+        - name: "Hakkımda"
+          url: "/tr/hakkimda/"
+          weight: 2
+
+  en:
+    outputs:
+      home:
+        - HTML
+        - RSS
+        - JSON
+    languageName: "EN"
+    weight: 2
+    contentDir: "content/en"
+    params:
+      homeInfoParams:
+        Title: "Selim Yalçın"
+        Content: "I study cybersecurity. I write about technical topics, notes, and my projects on this blog."
+      socialIcons:
+        - name: github
+          url: "https://github.com/"
+        - name: x
+          url: "https://x.com/"
+        - name: linkedin
+          url: "https://www.linkedin.com/"
+    menu:
+      main:
+        - name: "Blog"
+          url: "/en/blog/"
+          weight: 1
+        - name: "About"
+          url: "/en/about/"
+          weight: 2
+
+
+
+# -----------------------------
+#        PaperMod Settings
+# -----------------------------
+params:
+  env: production
+  author: "Selim"
+  DateFormat: "2 January 2006"
+  defaultTheme: auto
+  searchHidden: false
+  ShowSearchBar: true
+  disableThemeToggle: false
+  
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 1
+    limit: 10
+
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowWordCount: false
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  
+  hideSummary: false
+  disableScrollToTop: true
+
+  profileMode:
+    enabled: false
+
+  homeInfoParams:
+    Title: "Hi there 👋"
+    Content: "Welcome."
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/asmdkasd"
+    - name: x
+      url: "https://x.com/"
+    - name: linkedin
+      url: "https://www.linkedin.com"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+# Search / RSS
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+
+# Syntax highlighting
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    
+menu:
+  main:
+    - identifier: search
+      name: "Search"
+      url: "/search/"
+      weight: 99
+
