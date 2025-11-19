@@ -1,8 +1,7 @@
-baseURL: "https://selimyalcin.com/"
-publishDir: "docs"
+baseURL: "https://sel0zero.github.io/"
 title: "sel0zero"
 theme: PaperMod
-
+publishDir: "docs"
 
 # Yeni Hugo sürümü için pagination
 pagination:
